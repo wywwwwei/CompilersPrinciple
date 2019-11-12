@@ -1,0 +1,27 @@
+/** this is a comment line in the sample program **/
+ INT f2(INT x, INT y ) 
+ BEGIN 
+    INT z;
+    STRING str;
+    z := 2.0;
+    z := x*x - y*y;
+    RETURN z; 
+ END 
+ INT MAIN f1() 
+ BEGIN
+    INT x;
+    READ(x, "A41.input");
+    INT y;
+    READ(y, "A42.input");
+    INT z;
+    z := f2(x,y) + f2(y,x);
+    IF(x >= y)
+    BEGIN
+      z := x + y;
+    END
+    WHILE( x >= y)
+    BEGIN
+      z := x + y;
+    END
+    WRITE (z, "A4.output"); 
+ END
